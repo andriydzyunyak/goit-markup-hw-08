@@ -1,0 +1,21 @@
+.header-container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__home-link {
+    color: #000000;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}

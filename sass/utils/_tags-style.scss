@@ -1,0 +1,42 @@
+body {
+  font-family: $font-roboto, sans-serif;
+  color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+section {
+  padding-top: $padding-top-section;
+  padding-bottom: $padding-bottom-section;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}

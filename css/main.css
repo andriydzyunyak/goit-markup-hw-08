@@ -22,7 +22,7 @@ ul {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -45,13 +45,14 @@ section {
 
 .container {
   width: 100%;
-  padding: 0 15px 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 
@@ -232,7 +233,7 @@ section {
 
 .hero {
   max-width: 1600px;
-  min-width: 100vw;
+  min-width: 320px;
   margin: 0 auto;
   padding: 118px 60px 118px 60px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mob@1x.jpg);
@@ -256,7 +257,7 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tab@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab@2x.jpg);
@@ -270,7 +271,7 @@ section {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desk@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk@2x.jpg);
@@ -340,15 +341,46 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: calc(-1 * 30px);
-  margin-top: calc(-1 * 30px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .feauters-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feauters-list {
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+    margin-bottom: 0;
+  }
 }
 
 .feauters-list__item {
-  -ms-flex-preferred-size: calc(100% / 4 - 30px);
-      flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .feauters-list__item {
+    margin-left: 0;
+    margin-right: 0;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feauters-list__item {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .feauters-list__image {
@@ -361,10 +393,22 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .feauters-list__image {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feauters-list__image {
+    width: 270px;
+  }
 }
 
 .feauters-list__title {
@@ -373,9 +417,16 @@ section {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #212121;
   margin: 0 auto;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .feauters-list__title {
+    text-align: start;
+  }
 }
 
 .feauters-list__text {
@@ -384,6 +435,16 @@ section {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0 auto;
+}
+
+.company-specifics {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .company-specifics {
+    display: inherit;
+  }
 }
 
 .company-specifics__title {

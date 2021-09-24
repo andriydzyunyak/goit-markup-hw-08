@@ -1,22 +1,44 @@
 .feauters-list {
   display: flex;
-  margin-left: calc(-1 * #{$card-set-margin});
-  margin-top: calc(-1 * #{$card-set-margin});
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: calc(-1 * #{$card-set-margin});
+    margin-top: calc(-1 * #{$card-set-margin});
+    margin-bottom: 0;
+  }
 
   &__item {
-    flex-basis: calc(100% / 4 - #{$card-set-margin});
-    margin-left: $card-set-margin;
-    margin-top: $card-set-margin;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+
+      flex-basis: calc(100% / 2 - #{$card-set-margin});
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - #{$card-set-margin});
+      margin-left: $card-set-margin;
+      margin-top: $card-set-margin;
+    }
   }
 
   &__image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
 
@@ -26,9 +48,13 @@
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: $third-title-color;
   margin: 0 auto;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .feauters-list__text {

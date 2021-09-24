@@ -1,3 +1,11 @@
+.company-specifics {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: inherit;
+  }
+}
+
 .company-specifics__title {
   font-weight: 700;
   font-size: 36px;

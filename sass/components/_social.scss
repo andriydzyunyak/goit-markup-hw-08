@@ -44,3 +44,15 @@
     }
   }
 }
+
+.social-section {
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}

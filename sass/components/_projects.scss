@@ -1,14 +1,24 @@
 .projects {
-  // @extend %list;
   display: flex;
   flex-wrap: wrap;
-
+  @media screen and (min-width: 768px) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: calc(-1 * #{$card-set-margin});
     margin-top: calc(-1 * #{$card-set-margin});
   }
   &__item {
-    margin-bottom: $card-set-margin;
+    &:not(:last-child) {
+      margin-bottom: $card-set-margin;
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - #{$card-set-margin});
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 3 - #{$card-set-margin});
       margin-left: $card-set-margin;

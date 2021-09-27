@@ -44,7 +44,7 @@
             <ul class="contact-list list">
                 <li class="contact-list__item">
                     <a class="contact-list__link link" lang="en" href="mailto:info@devstudio.com">
-                        <svg class="contact-list__icon" width="16" height="12">
+                        <svg class="contact-list__icon" id="header-mail" width="16" height="12">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com
@@ -52,7 +52,7 @@
                 </li>
                 <li class="contact-item">
                     <a class="contact-list__link link" href="tel:+380961111111">
-                        <svg class="contact-list__icon" width="10" height="16">
+                        <svg class="contact-list__icon" id="header-tel" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -96,9 +96,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/tekhno-mob@1x.jpg 1x, ./images/tekhno-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/tekhno-tab@1x.jpg 1x, ./images/tekhno-tab@1x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/tekhno-desk@1x.jpg 1x, ./images/tekhno-desk@1x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/tekhno-mob@1x.jpg 1x, ./images/tekhno-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/tekhno-tab@1x.jpg 1x, ./images/tekhno-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/tekhno-desk@1x.jpg 1x, ./images/tekhno-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/tekhno-mob@1x.jpg" alt="Веб-сайт Технокряк"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -115,9 +115,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/basket-mob@1x.jpg 1x, ./images/basket-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/basket-tab@1x.jpg 1x, ./images/basket-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/basket-desk@1x.jpg 1x, ./images/basket-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/basket-mob@1x.jpg 1x, ./images/basket-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/basket-tab@1x.jpg 1x, ./images/basket-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/basket-desk@1x.jpg 1x, ./images/basket-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/basket-mob@1x.jpg" alt="Постер про баскетболистов"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -134,9 +134,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/seafood-mob@1x.jpg 1x, ./images/seafood-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/seafood-tab@1x.jpg 1x, ./images/seafood-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/seafood-desk@1x.jpg 1x, ./images/seafood-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/seafood-mob@1x.jpg 1x, ./images/seafood-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/seafood-tab@1x.jpg 1x, ./images/seafood-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/seafood-desk@1x.jpg 1x, ./images/seafood-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/seafood-mob@1x.jpg" alt="Приложение ресторана"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -153,9 +153,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/prime-mob@1x.jpg 1x, ./images/prime-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/prime-tab@1x.jpg 1x, ./images/prime-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/prime-desk@1x.jpg 1x, ./images/prime-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/prime-mob@1x.jpg 1x, ./images/prime-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/prime-tab@1x.jpg 1x, ./images/prime-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/prime-desk@1x.jpg 1x, ./images/prime-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/prime-mob@1x.jpg" alt="Проэкт Прайм"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -172,9 +172,9 @@
                             <a class="projects__link link" href="">
                                <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/boxes-mob@1x.jpg 1x, ./images/boxes-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/boxes-tab@1x.jpg 1x, ./images/boxes-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/boxes-desk@1x.jpg 1x, ./images/boxes-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/boxes-mob@1x.jpg 1x, ./images/boxes-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/boxes-tab@1x.jpg 1x, ./images/boxes-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/boxes-desk@1x.jpg 1x, ./images/boxes-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/book-mob@1x.jpg" alt="Проэкт ящики"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -191,9 +191,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/inspiration-mob@1x.jpg 1x, ./images/inspiration-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/inspiration-tab@1x.jpg 1x, ./images/inspiration-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/inspiration-desk@1x.jpg 1x, ./images/inspiration-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/inspiration-mob@1x.jpg 1x, ./images/inspiration-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/inspiration-tab@1x.jpg 1x, ./images/inspiration-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/inspiration-desk@1x.jpg 1x, ./images/inspiration-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/inspiration-mob@1x.jpg" alt="Веб-сайт про вдохновения"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -210,9 +210,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/book-mob@1x.jpg 1x, ./images/book-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/book-tab@1x.jpg 1x, ./images/book-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/book-desk@1x.jpg 1x, ./images/book-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/book-mob@1x.jpg 1x, ./images/book-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/book-tab@1x.jpg 1x, ./images/book-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/book-desk@1x.jpg 1x, ./images/book-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/book-mob@1x.jpg" alt="Дизайн издания"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -229,9 +229,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/lab-mob@1x.jpg 1x, ./images/lab-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/lab-tab@1x.jpg 1x, ./images/lab-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/lab-desk@1x.jpg 1x, ./images/lab-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/lab-mob@1x.jpg 1x, ./images/lab-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/lab-tab@1x.jpg 1x, ./images/lab-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/lab-desk@1x.jpg 1x, ./images/lab-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/lab-mob@1x.jpg" alt="Проэкт Lab"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.
@@ -248,9 +248,9 @@
                             <a class="projects__link link" href="">
                                 <div class="projects__content">
                                     <picture>
-                                        <source srcset="./images/notebook-mob@1x.jpg 1x, ./images/notebook-mob@2x.jpg 2x" media="(min-width:320px)" />
-                                        <source srcset="./images/notebook-tab@1x.jpg 1x, ./images/notebook-tab@2x.jpg 2x" media="(min-width:768px)" />
-                                        <source srcset="./images/notebook-desk@1x.jpg 1x, ./images/notebook-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                                        <source srcset="./images/notebook-mob@1x.jpg 1x, ./images/notebook-mob@2x.jpg 2x" media="(max-width:767px)" sizes="(min-width:320px) 480px 100vw"/>
+                                        <source srcset="./images/notebook-tab@1x.jpg 1x, ./images/notebook-tab@2x.jpg 2x" media="(max-width:1199px)" sizes="(min-width:768px) 768px 100vw"/>
+                                        <source srcset="./images/notebook-desk@1x.jpg 1x, ./images/notebook-desk@2x.jpg 2x" media="(min-width:1200px)" sizes="(min-width:1200px) 1200px 100vw"/>
                                         <img src="./images/notebook-mob@1x.jpg" alt="Приложение для бизнесса"/>
                                     </picture>
                                     <p class="projects__hidden-text">Технокряк это современная площадка распространения коронавируса.

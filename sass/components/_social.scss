@@ -6,15 +6,20 @@
   text-transform: uppercase;
   color: $secondary-text-color;
   margin: 0 auto;
-  padding-top: 72px;
-  margin-left: 70px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
+    margin-left: 70px;
+  }
 }
 
 .social {
-  @extend %list;
   display: flex;
   margin: 0 auto;
-  margin-left: 70px;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 10px;

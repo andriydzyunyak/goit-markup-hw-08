@@ -1,6 +1,16 @@
-.footer-container {
-  @extend %container;
-  display: flex;
+.footer {
+  .container {
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: start;
+      margin-left: 0;
+    }
+  }
 }
 
 .footer {
@@ -12,6 +22,13 @@
     display: inline-block;
     padding-top: 60px;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-left: 115px;
+    }
+    @media screen and (max-width: 1199px) {
+      font-size: 24px;
+      line-height: 1.17;
+    }
   }
 
   &__address {
@@ -24,6 +41,10 @@
     display: block;
     margin-bottom: 9px;
     padding-right: 13px;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin-left: 61px;
+    }
   }
 }
 
@@ -42,4 +63,14 @@
   &:focus {
     color: $hover-color;
   }
+}
+
+.address-section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-section {
+  margin: 0 auto;
+  text-align: center;
 }

@@ -5,28 +5,42 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $secondary-text-color;
-  display: flex;
+  text-align: center;
   margin: 0 auto;
-  margin-top: 72px;
-  margin-left: 93px;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 72px;
+    margin-left: 93px;
+    text-align: start;
+  }
 }
 
 .subscribe-form {
-  display: flex;
   margin: 0 auto;
-  margin-left: 93px;
   margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0 auto;
+    margin-left: 93px;
+  }
 
   &__input {
-    width: 358px;
+    // width: 358px;
+    width: 100%;
     margin: 0 auto;
+    padding: 15px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: $secondary-text-color;
     background-color: #2f303a;
-    margin-right: 12px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      width: 385px;
+      margin-right: 12px;
+    }
 
     &::placeholder {
       font-size: 16px;

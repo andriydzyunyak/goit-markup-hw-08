@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
   }
   @media screen and (min-width: 1200px) {
@@ -27,6 +27,7 @@
       flex-basis: calc(100% / 4 - #{$card-set-margin});
       margin-left: $card-set-margin;
       margin-top: $card-set-margin;
+      margin-bottom: 0;
     }
   }
 

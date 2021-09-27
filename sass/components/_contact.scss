@@ -11,8 +11,10 @@
   }
 
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 10px;
+    @media screen and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -51,13 +53,13 @@
   }
 }
 #header-mail {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     width: 14px;
     height: 10px;
   }
 }
 #header-tel {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     width: 10px;
     height: 14px;
   }

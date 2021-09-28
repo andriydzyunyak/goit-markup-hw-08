@@ -10,13 +10,15 @@
   margin-top: 60px;
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-top: 72px;
-    margin-left: 93px;
-    text-align: start;
+    margin: 0 auto;
   }
 }
 .subscribe-section {
   margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin-top: 72px;
+    margin-left: 93px;
+  }
 }
 
 .subscribe-form {
@@ -24,8 +26,6 @@
   margin-top: 20px;
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin: 0 auto;
-    margin-left: 93px;
   }
 
   &__input {
@@ -43,7 +43,8 @@
       width: 450px;
     }
     @media screen and (min-width: 1200px) {
-      width: 385px;
+      width: 358px;
+      margin: 0 auto;
       margin-right: 12px;
     }
 

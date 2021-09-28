@@ -1,15 +1,13 @@
 .footer {
   .container {
     margin: 0 auto;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      justify-content: start;
-      margin-left: 0;
     }
   }
 }
@@ -23,8 +21,6 @@
     display: inline-block;
     padding-top: 60px;
     margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
-    }
     @media screen and (max-width: 1199px) {
       font-size: 24px;
       line-height: 1.17;
@@ -81,5 +77,6 @@
   }
   @media screen and (min-width: 1200px) {
     text-align: start;
+    margin-right: 0;
   }
 }

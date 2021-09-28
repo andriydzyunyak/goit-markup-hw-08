@@ -45,7 +45,6 @@
 .projects__content {
   position: relative;
   overflow: hidden;
-  flex-grow: 1;
 }
 
 .projects__hidden-text {
@@ -67,6 +66,7 @@
 
 .projects__info {
   margin: 0;
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px #eeeeee solid;
   border-left: 1px #eeeeee solid;

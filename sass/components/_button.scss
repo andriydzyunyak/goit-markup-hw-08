@@ -1,5 +1,7 @@
-.btn:hover,
-.btn:focus {
-  color: $secondary-text-color;
-  background-color: $hover-color;
+.btn {
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    background-color: $hover-color;
+  }
 }

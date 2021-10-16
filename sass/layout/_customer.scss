@@ -17,38 +17,22 @@
 .customer {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width: 768px) {
-    margin-left: calc(-1 * #{$card-set-margin});
-  }
-
+  margin: -15px;
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
-
   &__item {
-    margin: 0 auto;
-    margin-bottom: 30px;
-
     @media screen and (max-width: 767px) {
-      &:nth-child(n + 4) {
-        margin-bottom: 0;
-      }
-      flex-basis: calc(100% / 2 - #{$card-set-margin});
-      &:nth-child(2n + 1) {
-        margin-right: 30px;
-      }
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
     @media screen and (min-width: 768px) {
-      &:nth-child(n + 3) {
-        margin-bottom: 0;
-      }
-      flex-basis: calc(100% / 3 - #{$card-set-margin});
-      margin-left: $card-set-margin;
+      flex-basis: calc((100% - 6 * 15px) /  3);
+      margin: 15px;
     }
     @media screen and (min-width: 1200px) {
-      flex-basis: calc(100% / 6 - #{$card-set-margin});
-
-      margin-bottom: 0;
+      flex-basis: calc((100% - 12 * 15px) / 6);
+      margin: 15px;
     }
   }
 

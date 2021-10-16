@@ -2,6 +2,9 @@ body {
   font-family: $font-roboto, sans-serif;
   color: #ffffff;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 p,
 h1,
